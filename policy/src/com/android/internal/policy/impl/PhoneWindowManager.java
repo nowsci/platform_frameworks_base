@@ -5081,6 +5081,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                             com.android.internal.R.bool.config_allowAllRotations) ? 1 : 0;
                 }
                 if (sensorRotation != Surface.ROTATION_180
+                        || mAllowAllRotations == 0
                         || mAllowAllRotations == 1
                         || orientation == ActivityInfo.SCREEN_ORIENTATION_FULL_SENSOR
                         || orientation == ActivityInfo.SCREEN_ORIENTATION_FULL_USER) {
